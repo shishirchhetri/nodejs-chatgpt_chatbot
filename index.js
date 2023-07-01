@@ -44,7 +44,7 @@ async function main(){
 
             
         }catch(error){
-            console.log(colors.red (error));
+            console.log(colors.red ('Error ' + error));
         }
     
         
