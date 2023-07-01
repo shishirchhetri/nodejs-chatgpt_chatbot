@@ -1,9 +1,9 @@
-import {configuration, OpenAIApi} from 'openai';
-import dotenv from 'dotenv'
-dotenv.config();
+import openai from './config/openai.js'
+import readlineSync from 'readline-sync'
+import colors from 'colors'
 
-const configuration = new configuration({
-    apiKey: process.env.OPENAI_API_KEY
-})
-
-const openai = new OpenAIApi(configuration);
+async function main(){
+    console.log(colors.bold.green("Welcome to the Chatbot Program"));
+    console.log(colors.bold.green("You can start chatting with the bot here."))
+}
+main()
